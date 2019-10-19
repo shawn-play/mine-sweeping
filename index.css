@@ -1,0 +1,306 @@
+@charset "gb2312";
+html, body {
+    padding: 0;
+    margin: 0;
+    background: #d4d0c8;
+    height: 100%;
+    font: 12px/1.8 '宋体', "Courier New", Courier, monospace;
+    user-select: none;
+    line-height: 24px;
+}
+img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+body {
+    background: #aaa;
+}
+.gamebox {
+    position: absolute;
+    transform: translate(-0.1%, -0.1%);
+    /* transform 百分比数值 会影响界面清晰度 */
+    width: 504px;
+    height: 367px;
+    z-index: 999;
+    background: #d4d0c8;
+    border: 1px solid #d4d0d8;
+    border-right: 1px solid #404040;
+    border-bottom: 1px solid #404040;
+}
+.border {
+    border: 1px solid #eff4ed;
+    border-right: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+}
+.title {
+    height: 16px;
+    line-height: 16px;
+    color: #fff;
+    overflow: hidden;
+    padding: 2px;
+    position: relative;
+    background: -webkit-linear-gradient(left, #33407f, #b2ccdd);
+}
+.gametitle {
+    background: url(./imgs/mine.gif) 2px 1px no-repeat;
+    font-weight: bold;
+    padding-left: 24px;
+}
+.ctrl {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    height: 16px;
+    overflow: hidden;
+}
+.ctrl-but {
+    float: right;
+    margin-right: 2px;
+    width: 18px;
+    height: 15px;
+    background: url(./imgs/ctlbtn.jpg) -31px 1px no-repeat;
+}
+.ctrl-max {
+    background: url(./imgs/ctlbtn.jpg) -47px 1px;
+}
+.ctrl-min {
+    background: url(./imgs/ctlbtn.jpg) 1px 1px;
+}
+.d_button, .d_xbutton, .d_nbutton {
+    border: 1px solid #eff4ed;
+    border-right: 1px solid #404040;
+    border-bottom: 1px solid #404040;
+    cursor: default;
+}
+.d_button_border {
+    height: 12px;
+    border: 1px solid #d4d0c8;
+    border-right: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+}
+
+.d_button_down {
+    border: 1px solid #404040;
+    border-right: 1px solid #eff4ed;
+    border-bottom: 1px solid #eff4ed;
+}
+.d_button_down .d_button_border {
+    border: 1px solid #eee;
+    border-left: 1px solid #808080;
+    border-top: 1px solid #808080;
+}
+.toolbar {
+    padding-left: 2px;
+}
+.menu {
+    position: relative;
+    font: 12px;
+    line-height: 20px;
+    cursor: default;
+    margin-top: 2px;
+    height: 20px;
+    z-index: 1000;
+}
+.menu > * {
+    z-index: 3000;
+}
+.main_menu {
+    height: 20px;
+    line-height: 18px;
+    overflow: hidden;
+    cursor: default;
+}
+.menu_item {
+    float: left;
+    width: 60px;
+    color: #222222;
+    text-align: center;
+    border: 0px solid #d4d0c8;
+}
+.menu_item:hover {
+    width: 58px;
+    line-height: 17px;
+    height: 18px;
+    border: 1px solid #eee;
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555;
+}
+.content {
+    padding: 2px;
+    height: 319px;
+}
+.game {
+    border: 2px solid #eee;
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    background: #bfbfbf;
+    padding: 5px;
+}
+.info {
+    border: 1px solid #666;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    height: 34px;
+    overflow: hidden;
+}
+.info .left {
+    float: left;
+    width: 35%;
+}
+.info .middle {
+    width: 29.9%;
+    float: left;
+    text-align: center;
+}
+.info .right {
+    float: right;
+    width: 35%;
+    text-align: right;
+    position: relative;
+}
+.info .score {
+    margin-left: 10px;
+}
+.info .score, .info .time {
+    margin-top: 5px;
+    width: 39px;
+    height: 23px;
+    overflow: hidden;
+    border: 1px solid #808080;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.info b {
+    display: block;
+    float: left;
+    width: 13px;
+    height: 23px;
+    overflow: hidden;
+}
+.info .num_1 {
+    background: url(imgs/num.bmp) 0px -230px no-repeat;
+}
+.info .num_2 {
+    background: url(imgs/num.bmp) 0px -207px no-repeat;
+}
+.info .num_8 {
+    background: url(imgs/num.bmp) 0px -69px no-repeat;
+}
+
+.info .time {
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+}
+.info .num_0 {
+    background: url(imgs/num.bmp) 0px -253px no-repeat;
+}
+.info .num_9{
+	background:url(imgs/num.bmp) 0px -46px no-repeat;
+}
+.info .num_-{
+	background:url(imgs/num.bmp) 0px 0px no-repeat;
+}
+.info .num_3{
+	background:url(imgs/num.bmp) 0px -184px no-repeat;
+}
+.info .num_4{
+	background:url(imgs/num.bmp) 0px -161px no-repeat;
+}
+.info .num_5{
+	background:url(imgs/num.bmp) 0px -138px no-repeat;
+}
+.info .num_6{
+	background:url(imgs/num.bmp) 0px -115px no-repeat;
+}
+.info .num_7{
+	background:url(imgs/num.bmp) 0px -92px no-repeat;
+}
+.info .smile {
+    margin: 5px auto;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    cursor: default;
+}
+.info .d_smile {
+    width: 24px;
+    height: 24px;
+    background: url(imgs/smile.bmp) 0px -96px no-repeat;
+}
+.info .d_smile_down {
+    width: 24px;
+    height: 24px;
+    background: url(imgs/smile.bmp) 0px 0px no-repeat;
+}
+.info .d_smile_over {
+    width: 24px;
+    height: 24px;
+    background: url(imgs/smile.bmp) 0px -48px no-repeat;
+}
+.info .d_smile_win {
+    width: 24px;
+    height: 24px;
+    background: url(imgs/smile.bmp) 0px -24px no-repeat;
+}
+
+.map {
+    margin-top: 8px;
+    border: 2px solid #808080;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+.map table td {
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    background: url(imgs/mineicon.bmp)
+}
+.map .m_normal, .map .f_0 {
+    background: url(imgs/mineicon.bmp) 0px 0px no-repeat;
+}
+.map .m_flag, .map .f_1{
+	background:url(imgs/mineicon.bmp) 0px -16px no-repeat;
+}
+.map .m_unknow, .map .f_2{
+	background:url(imgs/mineicon.bmp) 0px -32px no-repeat;
+}
+.map .m_bomb, .map .m_9{
+	background:url(imgs/mineicon.bmp) 0px -48px no-repeat;
+}
+.map .m_notmine{
+	background:url(imgs/mineicon.bmp) 0px -64px no-repeat;
+}
+.map .m_mine{
+	background:url(imgs/mineicon.bmp) 0px -80px no-repeat;
+}
+.map .m_unknow2{
+	background:url(imgs/mineicon.bmp) 0px -96px no-repeat;
+}
+.map .m_8{
+	background:url(imgs/mineicon.bmp) 0px -112px no-repeat;
+}
+.map .m_7{
+	background:url(imgs/mineicon.bmp) 0px -128px no-repeat;
+}
+.map .m_6{
+	background:url(imgs/mineicon.bmp) 0px -144px no-repeat;
+}
+.map .m_5{
+	background:url(imgs/mineicon.bmp) 0px -160px no-repeat;
+}
+.map .m_4{
+	background:url(imgs/mineicon.bmp) 0px -176px no-repeat;
+}
+.map .m_3{
+	background:url(imgs/mineicon.bmp) 0px -192px no-repeat;
+}
+.map .m_2{
+	background:url(imgs/mineicon.bmp) 0px -208px no-repeat;
+}
+.map .m_1{
+	background:url(imgs/mineicon.bmp) 0px -224px no-repeat;
+}
+.map .m_0{
+	background:url(imgs/mineicon.bmp) 0px -240px no-repeat;
+}

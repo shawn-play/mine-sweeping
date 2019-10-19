@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>扫雷 Online</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="gamebox" id="gamebox" style="display: none;">
+        <div class="border">
+            <div class="title">
+                <div class="gametitle" id="dragBar">扫雷Online</div>
+                <div class="ctrl" id="ctrl">
+                    <div class="ctrl-but">
+                        <div class="d_button">
+                            <div class="d_button_border"></div>
+                        </div>
+                    </div>
+                    <div class="ctrl-but ctrl-max">
+                        <div class="d_xbutton">
+                            <div class="d_button_border"></div>
+                        </div>
+                    </div>
+                    <div class="ctrl-but ctrl-min">
+                        <div class="d_nbutton">
+                            <div class="d_button_border"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="toolbar">
+                <div class="menu" id="menu">
+                    <div class="main_menu">
+                      <div class="menu_item">游戏(G)</div>
+                      <div class="menu_item">帮助(H)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="game">
+                    <div class="info" id="info">
+                        <div class="left">
+                            <div class="score" id="score">
+                                <b class="num_1"></b>
+                                <b class="num_2"></b>
+                                <b class="num_8"></b>
+                            </div>
+                        </div>
+                        <div class="middle">
+                            <div class="smile" id="smile">
+                                <div class="d_smile">
+                                    <div class="d_button_botton"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="time" id="time">
+                                <b class="num_0"></b>
+                                <b class="num_0"></b>
+                                <b class="num_0"></b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map" id="map">
+                        <table id="gameTable" class="gameTable" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td class="m_normal"><!-- 未翻开 --></td>
+                                <td class="f_0"><!-- 取消标记 --></td>
+                                <td class="f_1"><!-- 标记 --></td>
+                                <td class="f_2"><!-- 待定 --></td>
+                                <td class="m_9"><!-- 未发现的地雷 --></td>
+                                <td class="m_bomb"><!-- 触雷 --></td>
+                                <td class="m_notmine"><!-- 错误标记 --></td>
+                                <td class="m_mine"><!-- 正确标记 --></td>
+                                <td class="m_unknow2"><!-- 取消标记 --></td>
+                                <td class="m_8"><!-- 8个雷 --></td>
+                                <td class="m_7"><!-- 7个雷 --></td>
+                                <td class="m_6"><!-- 6个雷 --></td>
+                                <td class="m_5"><!-- 5个雷 --></td>
+                                <td class="m_4"><!-- 4个雷 --></td>
+                                <td class="m_3"><!-- 3个雷 --></td>
+                                <td class="m_2"><!-- 2个雷 --></td>
+                                <td class="m_1"><!-- 1个雷 --></td>
+                                <td class="m_0"><!-- 没有雷 --></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="evenBox"></div>
+    <div id="evenWin"></div>
+    <script src="./index.dist.js"></script>
+</body>
+</html>
